@@ -21,8 +21,18 @@
         <h1 class="text-5xl text-black font-bold uppercase">Coca-Cola</h1>
     </header>
 
+    <!-- Navigation Bar -->
+    <nav class="bg-red-800 py-4 shadow-lg">
+        <ul class="flex justify-center space-x-8">
+            <li><a href="#home" class="text-white hover:text-gray-300 transition duration-300">Home</a></li>
+            <li><a href="#products" class="text-white hover:text-gray-300 transition duration-300">Products</a></li>
+            <li><a href="#about" class="text-white hover:text-gray-300 transition duration-300">About Us</a></li>
+            <li><a href="#contact" class="text-white hover:text-gray-300 transition duration-300">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="text-center py-20 px-6 bg-red-500 bg-opacity-80">
+    <section id="home" class="text-center py-20 px-6 bg-red-500 bg-opacity-80">
         <h2 class="text-3xl font-semibold">Refresh Your World</h2>
         <p class="mt-4 text-lg">The real taste of happiness.</p>
         <button class="mt-6 px-6 py-2 bg-white text-red-600 font-bold rounded-full shadow-lg hover:bg-gray-200 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer">
@@ -31,11 +41,9 @@
     </section>
 
     <!-- Products Section -->
-    <section class="py-12 px-6 text-center bg-red-600 bg-opacity-90">
+    <section id="products" class="py-12 px-6 text-center bg-red-600 bg-opacity-90">
         <h2 class="text-3xl font-semibold">Our Products</h2>
         <div class="mt-8 flex flex-wrap justify-center gap-8">
-
-
 
             <!-- Product 1 -->
             <div class="bg-white text-red-700 p-6 rounded-lg shadow-lg w-64 text-center">
@@ -44,16 +52,12 @@
                 <p class="mt-2 text-sm">The timeless taste of cola that you love, made with real sugar and natural flavors.</p>
             </div>
 
-
-
             <!-- Product 2 -->
             <div class="bg-white text-red-700 p-6 rounded-lg shadow-lg w-64 text-center">
                 <img class="rounded-lg" src="./asserts/diet coke.jpg" alt="Diet Coke" class="mx-auto h-40">
                 <h3 class="text-xl font-semibold mt-4">Diet Coke</h3>
                 <p class="mt-2 text-sm">A crisp, refreshing, sugar-free option with the same great cola taste.</p>
             </div>
-
-
 
             <!-- Product 3 -->
             <div class="bg-white text-red-700 p-6 rounded-lg shadow-lg w-64 text-center">
@@ -65,9 +69,27 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="py-12 px-6 text-center bg-red-500 bg-opacity-80">
+        <h2 class="text-3xl font-semibold">About Us</h2>
+        <p class="mt-4 text-lg max-w-2xl mx-auto">
+            Coca-Cola is a global leader in the beverage industry, offering a wide range of refreshing drinks that bring joy to millions of people around the world. Our commitment to quality and innovation ensures that every sip of Coca-Cola is a moment of happiness.
+        </p>
+    </section>
 
-
-
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-12 px-6 text-center bg-red-600 bg-opacity-90">
+        <h2 class="text-3xl font-semibold">Contact Us</h2>
+        <p class="mt-4 text-lg">We'd love to hear from you! Reach out to us for any inquiries or feedback.</p>
+        <form class="mt-6 max-w-md mx-auto">
+            <input type="text" placeholder="Your Name" class="w-full px-4 py-2 mb-4 rounded-lg text-black">
+            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 mb-4 rounded-lg text-black">
+            <textarea placeholder="Your Message" class="w-full px-4 py-2 mb-4 rounded-lg text-black"></textarea>
+            <button type="submit" class="px-6 py-2 bg-white text-red-600 font-bold rounded-full shadow-lg hover:bg-gray-200 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer">
+                Send Message
+            </button>
+        </form>
+    </section>
 
     <!-- Footer -->
     <footer class="text-center py-6 bg-red-700 mt-12">
